@@ -1,0 +1,1 @@
+{"id": "X2", "statement": "Onboarding continues: median new accounts per week over the last 13 weeks is at least 150,000.", "series": "new_accounts", "kind": "level", "stat": "median", "window": 13, "comparator": ">=", "threshold": 150000}

@@ -1,0 +1,549 @@
+{
+ "contract": "evledger-1114.testnet",
+ "fetched_utc": "2026-11-14T08:12:54Z",
+ "info": {
+  "version": "evidence-ledger 0.1.1",
+  "runs": 1,
+  "challenges": 1,
+  "predictions": 21,
+  "rule": "claims.py verdict: interval fully passes => SUPPORTED, fully fails => REFUTED, else INCONCLUSIVE; no interval: within 5% of threshold => INCONCLUSIVE",
+  "fixed_point": "values are integers scaled by 1e6"
+ },
+ "run": {
+  "id": 0,
+  "attester": "evledger-pub-1114.testnet",
+  "ts_ms": 1794643874713,
+  "height": 277630672,
+  "meta": {
+   "spec_hash": "43a15ea320974e12a8bda5887d239525f67a6478b4a0a44bbdd4bb5dd03d157a",
+   "snapshot_hash": "351609889f50418942c5cd1f9d0b656a62c95da11e6e01c0986f8bcefee43407",
+   "code_hash": "abff4dbd87c267b760028ff94e4ffd2b6e4e5040d256fe8c6fe1471ef5dd7dc3",
+   "results_hash": "5570a5c12d94b1c5fa9ee64d905f454b7079d43213d5c4302f34eea8c01e040d",
+   "data_through": "2026-11-08",
+   "backtest_cov80_bp": 7764,
+   "backtest_cov95_bp": 9157,
+   "note": "Evidence Ledger: 10 NEAR claims, data through 2026-11-08"
+  },
+  "verdicts": [
+   {
+    "claim_id": "C1",
+    "comparator": ">=",
+    "threshold": 1000000,
+    "value": 153679,
+    "ci_lo": 143747,
+    "ci_hi": 187521,
+    "verdict": "REFUTED"
+   },
+   {
+    "claim_id": "C2",
+    "comparator": ">=",
+    "threshold": 100000000000,
+    "value": 71159000000,
+    "ci_lo": 55503000000,
+    "ci_hi": 79464000000,
+    "verdict": "REFUTED"
+   },
+   {
+    "claim_id": "C3",
+    "comparator": ">=",
+    "threshold": 10000,
+    "value": 18589,
+    "ci_lo": 15740,
+    "ci_hi": 22891,
+    "verdict": "SUPPORTED"
+   },
+   {
+    "claim_id": "C4",
+    "comparator": ">=",
+    "threshold": 1000000,
+    "value": 1544944,
+    "ci_lo": 1417112,
+    "ci_hi": 1749180,
+    "verdict": "SUPPORTED"
+   },
+   {
+    "claim_id": "C5",
+    "comparator": ">=",
+    "threshold": 50000,
+    "value": 16120,
+    "ci_lo": null,
+    "ci_hi": null,
+    "verdict": "REFUTED"
+   },
+   {
+    "claim_id": "C6",
+    "comparator": ">=",
+    "threshold": 200000,
+    "value": -103053,
+    "ci_lo": -279138,
+    "ci_hi": 125275,
+    "verdict": "REFUTED"
+   },
+   {
+    "claim_id": "C7",
+    "comparator": ">=",
+    "threshold": 10000000,
+    "value": 10000000,
+    "ci_lo": null,
+    "ci_hi": null,
+    "verdict": "INCONCLUSIVE"
+   },
+   {
+    "claim_id": "C8",
+    "comparator": "<=",
+    "threshold": 50000,
+    "value": 24728,
+    "ci_lo": null,
+    "ci_hi": null,
+    "verdict": "SUPPORTED"
+   },
+   {
+    "claim_id": "C9",
+    "comparator": ">=",
+    "threshold": 1000000,
+    "value": 1934246,
+    "ci_lo": 1677306,
+    "ci_hi": 2181375,
+    "verdict": "SUPPORTED"
+   },
+   {
+    "claim_id": "C10",
+    "comparator": ">=",
+    "threshold": 1000,
+    "value": 1538,
+    "ci_lo": 1415,
+    "ci_hi": 1660,
+    "verdict": "SUPPORTED"
+   }
+  ]
+ },
+ "challenges": [
+  {
+   "id": 0,
+   "run_id": 0,
+   "claim_id": "C3",
+   "challenger": "evledger-chal-1114.testnet",
+   "ts_ms": 1794643927434,
+   "alt_snapshot_hash": "351609889f50418942c5cd1f9d0b656a62c95da11e6e01c0986f8bcefee43407",
+   "alt_value": 325,
+   "alt_ci_lo": 204,
+   "alt_ci_hi": 498,
+   "alt_threshold": 10000,
+   "alt_verdict": "REFUTED",
+   "flips": true,
+   "evidence": "Own robustness variant, not a third party: C3 recomputed with gas-only fees (NearBlocks) instead of DefiLlama protocol-inclusive fees, same snapshot (output/robustness.json)."
+  }
+ ],
+ "run_tx": "2oGaJY8LrJjwu7VEB96JFyyJSAF53W6CUfFE5LNoyARj",
+ "predictions": [
+  {
+   "id": 0,
+   "attester": "evledger-pub-1114.testnet",
+   "ts_ms": 1794643278395,
+   "body": {
+    "metric": "txns",
+    "origin_week": "2026-11-08",
+    "target_week": "2026-11-15",
+    "target_end_ms": "1794787200000",
+    "level_bp": 8000,
+    "point": 4603495147079,
+    "lo": 4171757819663,
+    "hi": 5165696363532,
+    "snapshot_hash": "bfaeda1cc631cc287cbb87be21af17746ab1a4bca3db83c52634814b8acaccdc",
+    "method": "conformal-h1"
+   },
+   "resolution": null,
+   "disputes": []
+  },
+  {
+   "id": 1,
+   "attester": "evledger-pub-1114.testnet",
+   "ts_ms": 1794643278395,
+   "body": {
+    "metric": "txns",
+    "origin_week": "2026-11-08",
+    "target_week": "2026-11-22",
+    "target_end_ms": "1795392000000",
+    "level_bp": 8000,
+    "point": 4542813634674,
+    "lo": 3935683793021,
+    "hi": 5201401381502,
+    "snapshot_hash": "bfaeda1cc631cc287cbb87be21af17746ab1a4bca3db83c52634814b8acaccdc",
+    "method": "conformal-h2"
+   },
+   "resolution": null,
+   "disputes": []
+  },
+  {
+   "id": 2,
+   "attester": "evledger-pub-1114.testnet",
+   "ts_ms": 1794643278395,
+   "body": {
+    "metric": "txns",
+    "origin_week": "2026-11-08",
+    "target_week": "2026-12-06",
+    "target_end_ms": "1796601600000",
+    "level_bp": 8000,
+    "point": 4455185702072,
+    "lo": 3726675779958,
+    "hi": 5269758283273,
+    "snapshot_hash": "bfaeda1cc631cc287cbb87be21af17746ab1a4bca3db83c52634814b8acaccdc",
+    "method": "conformal-h4"
+   },
+   "resolution": null,
+   "disputes": []
+  },
+  {
+   "id": 3,
+   "attester": "evledger-pub-1114.testnet",
+   "ts_ms": 1794643278395,
+   "body": {
+    "metric": "active_accounts",
+    "origin_week": "2026-11-08",
+    "target_week": "2026-11-15",
+    "target_end_ms": "1794787200000",
+    "level_bp": 8000,
+    "point": 77196639299,
+    "lo": 72159036833,
+    "hi": 82506055027,
+    "snapshot_hash": "bfaeda1cc631cc287cbb87be21af17746ab1a4bca3db83c52634814b8acaccdc",
+    "method": "conformal-h1"
+   },
+   "resolution": null,
+   "disputes": []
+  },
+  {
+   "id": 4,
+   "attester": "evledger-pub-1114.testnet",
+   "ts_ms": 1794643278395,
+   "body": {
+    "metric": "active_accounts",
+    "origin_week": "2026-11-08",
+    "target_week": "2026-11-22",
+    "target_end_ms": "1795392000000",
+    "level_bp": 8000,
+    "point": 75329528122,
+    "lo": 67358580746,
+    "hi": 81156876006,
+    "snapshot_hash": "bfaeda1cc631cc287cbb87be21af17746ab1a4bca3db83c52634814b8acaccdc",
+    "method": "conformal-h2"
+   },
+   "resolution": null,
+   "disputes": []
+  },
+  {
+   "id": 5,
+   "attester": "evledger-pub-1114.testnet",
+   "ts_ms": 1794643278395,
+   "body": {
+    "metric": "active_accounts",
+    "origin_week": "2026-11-08",
+    "target_week": "2026-12-06",
+    "target_end_ms": "1796601600000",
+    "level_bp": 8000,
+    "point": 72110011587,
+    "lo": 61834350131,
+    "hi": 78320840637,
+    "snapshot_hash": "bfaeda1cc631cc287cbb87be21af17746ab1a4bca3db83c52634814b8acaccdc",
+    "method": "conformal-h4"
+   },
+   "resolution": null,
+   "disputes": []
+  },
+  {
+   "id": 6,
+   "attester": "evledger-pub-1114.testnet",
+   "ts_ms": 1794643278395,
+   "body": {
+    "metric": "net_fees_usd",
+    "origin_week": "2026-11-08",
+    "target_week": "2026-11-15",
+    "target_end_ms": "1794787200000",
+    "level_bp": 8000,
+    "point": 21614507253,
+    "lo": 18024334146,
+    "hi": 26236947442,
+    "snapshot_hash": "bfaeda1cc631cc287cbb87be21af17746ab1a4bca3db83c52634814b8acaccdc",
+    "method": "conformal-h1"
+   },
+   "resolution": null,
+   "disputes": []
+  },
+  {
+   "id": 7,
+   "attester": "evledger-pub-1114.testnet",
+   "ts_ms": 1794643278395,
+   "body": {
+    "metric": "net_fees_usd",
+    "origin_week": "2026-11-08",
+    "target_week": "2026-11-22",
+    "target_end_ms": "1795392000000",
+    "level_bp": 8000,
+    "point": 21205543014,
+    "lo": 16093389750,
+    "hi": 29619590517,
+    "snapshot_hash": "bfaeda1cc631cc287cbb87be21af17746ab1a4bca3db83c52634814b8acaccdc",
+    "method": "conformal-h2"
+   },
+   "resolution": null,
+   "disputes": []
+  },
+  {
+   "id": 8,
+   "attester": "evledger-pub-1114.testnet",
+   "ts_ms": 1794643278395,
+   "body": {
+    "metric": "net_fees_usd",
+    "origin_week": "2026-11-08",
+    "target_week": "2026-12-06",
+    "target_end_ms": "1796601600000",
+    "level_bp": 8000,
+    "point": 19605418675,
+    "lo": 12796562019,
+    "hi": 36208995411,
+    "snapshot_hash": "bfaeda1cc631cc287cbb87be21af17746ab1a4bca3db83c52634814b8acaccdc",
+    "method": "conformal-h4"
+   },
+   "resolution": null,
+   "disputes": []
+  },
+  {
+   "id": 9,
+   "attester": "evledger-pub-1114.testnet",
+   "ts_ms": 1794643278395,
+   "body": {
+    "metric": "price",
+    "origin_week": "2026-11-08",
+    "target_week": "2026-11-15",
+    "target_end_ms": "1794787200000",
+    "level_bp": 8000,
+    "point": 3680340,
+    "lo": 3197021,
+    "hi": 4375473,
+    "snapshot_hash": "bfaeda1cc631cc287cbb87be21af17746ab1a4bca3db83c52634814b8acaccdc",
+    "method": "conformal-h1"
+   },
+   "resolution": null,
+   "disputes": []
+  },
+  {
+   "id": 10,
+   "attester": "evledger-pub-1114.testnet",
+   "ts_ms": 1794643278395,
+   "body": {
+    "metric": "price",
+    "origin_week": "2026-11-08",
+    "target_week": "2026-11-22",
+    "target_end_ms": "1795392000000",
+    "level_bp": 8000,
+    "point": 3619688,
+    "lo": 2983130,
+    "hi": 4758167,
+    "snapshot_hash": "bfaeda1cc631cc287cbb87be21af17746ab1a4bca3db83c52634814b8acaccdc",
+    "method": "conformal-h2"
+   },
+   "resolution": null,
+   "disputes": []
+  },
+  {
+   "id": 11,
+   "attester": "evledger-pub-1114.testnet",
+   "ts_ms": 1794643278395,
+   "body": {
+    "metric": "price",
+    "origin_week": "2026-11-08",
+    "target_week": "2026-12-06",
+    "target_end_ms": "1796601600000",
+    "level_bp": 8000,
+    "point": 3656698,
+    "lo": 2629844,
+    "hi": 5464674,
+    "snapshot_hash": "bfaeda1cc631cc287cbb87be21af17746ab1a4bca3db83c52634814b8acaccdc",
+    "method": "conformal-h4"
+   },
+   "resolution": null,
+   "disputes": []
+  },
+  {
+   "id": 12,
+   "attester": "evledger-pub-1114.testnet",
+   "ts_ms": 1794643284387,
+   "body": {
+    "metric": "tvl",
+    "origin_week": "2026-11-08",
+    "target_week": "2026-11-15",
+    "target_end_ms": "1794787200000",
+    "level_bp": 8000,
+    "point": 173307014164341,
+    "lo": 141820104892843,
+    "hi": 219887188907011,
+    "snapshot_hash": "bfaeda1cc631cc287cbb87be21af17746ab1a4bca3db83c52634814b8acaccdc",
+    "method": "conformal-h1"
+   },
+   "resolution": null,
+   "disputes": []
+  },
+  {
+   "id": 13,
+   "attester": "evledger-pub-1114.testnet",
+   "ts_ms": 1794643284387,
+   "body": {
+    "metric": "tvl",
+    "origin_week": "2026-11-08",
+    "target_week": "2026-11-22",
+    "target_end_ms": "1795392000000",
+    "level_bp": 8000,
+    "point": 169811507802126,
+    "lo": 132640126797361,
+    "hi": 240578464613078,
+    "snapshot_hash": "bfaeda1cc631cc287cbb87be21af17746ab1a4bca3db83c52634814b8acaccdc",
+    "method": "conformal-h2"
+   },
+   "resolution": null,
+   "disputes": []
+  },
+  {
+   "id": 14,
+   "attester": "evledger-pub-1114.testnet",
+   "ts_ms": 1794643284387,
+   "body": {
+    "metric": "tvl",
+    "origin_week": "2026-11-08",
+    "target_week": "2026-12-06",
+    "target_end_ms": "1796601600000",
+    "level_bp": 8000,
+    "point": 165612071331069,
+    "lo": 123217383251427,
+    "hi": 262027339201256,
+    "snapshot_hash": "bfaeda1cc631cc287cbb87be21af17746ab1a4bca3db83c52634814b8acaccdc",
+    "method": "conformal-h4"
+   },
+   "resolution": null,
+   "disputes": []
+  },
+  {
+   "id": 15,
+   "attester": "evledger-pub-1114.testnet",
+   "ts_ms": 1794643284387,
+   "body": {
+    "metric": "stable_usd",
+    "origin_week": "2026-11-08",
+    "target_week": "2026-11-15",
+    "target_end_ms": "1794787200000",
+    "level_bp": 8000,
+    "point": 130731367496278,
+    "lo": 118527474264258,
+    "hi": 140534492167362,
+    "snapshot_hash": "bfaeda1cc631cc287cbb87be21af17746ab1a4bca3db83c52634814b8acaccdc",
+    "method": "conformal-h1"
+   },
+   "resolution": null,
+   "disputes": []
+  },
+  {
+   "id": 16,
+   "attester": "evledger-pub-1114.testnet",
+   "ts_ms": 1794643284387,
+   "body": {
+    "metric": "stable_usd",
+    "origin_week": "2026-11-08",
+    "target_week": "2026-11-22",
+    "target_end_ms": "1795392000000",
+    "level_bp": 8000,
+    "point": 130464676941791,
+    "lo": 101543547319798,
+    "hi": 148655128893886,
+    "snapshot_hash": "bfaeda1cc631cc287cbb87be21af17746ab1a4bca3db83c52634814b8acaccdc",
+    "method": "conformal-h2"
+   },
+   "resolution": null,
+   "disputes": []
+  },
+  {
+   "id": 17,
+   "attester": "evledger-pub-1114.testnet",
+   "ts_ms": 1794643284387,
+   "body": {
+    "metric": "stable_usd",
+    "origin_week": "2026-11-08",
+    "target_week": "2026-12-06",
+    "target_end_ms": "1796601600000",
+    "level_bp": 8000,
+    "point": 130021606651035,
+    "lo": 84401145676289,
+    "hi": 158647512757485,
+    "snapshot_hash": "bfaeda1cc631cc287cbb87be21af17746ab1a4bca3db83c52634814b8acaccdc",
+    "method": "conformal-h4"
+   },
+   "resolution": null,
+   "disputes": []
+  },
+  {
+   "id": 18,
+   "attester": "evledger-pub-1114.testnet",
+   "ts_ms": 1794643284387,
+   "body": {
+    "metric": "dl_fees_usd",
+    "origin_week": "2026-11-08",
+    "target_week": "2026-11-15",
+    "target_end_ms": "1794787200000",
+    "level_bp": 8000,
+    "point": 1611457489474,
+    "lo": 1119302884127,
+    "hi": 2483469212773,
+    "snapshot_hash": "bfaeda1cc631cc287cbb87be21af17746ab1a4bca3db83c52634814b8acaccdc",
+    "method": "conformal-h1"
+   },
+   "resolution": null,
+   "disputes": []
+  },
+  {
+   "id": 19,
+   "attester": "evledger-pub-1114.testnet",
+   "ts_ms": 1794643284387,
+   "body": {
+    "metric": "dl_fees_usd",
+    "origin_week": "2026-11-08",
+    "target_week": "2026-11-22",
+    "target_end_ms": "1795392000000",
+    "level_bp": 8000,
+    "point": 1611602929041,
+    "lo": 972465945231,
+    "hi": 2924635265629,
+    "snapshot_hash": "bfaeda1cc631cc287cbb87be21af17746ab1a4bca3db83c52634814b8acaccdc",
+    "method": "conformal-h2"
+   },
+   "resolution": null,
+   "disputes": []
+  },
+  {
+   "id": 20,
+   "attester": "evledger-pub-1114.testnet",
+   "ts_ms": 1794643284387,
+   "body": {
+    "metric": "dl_fees_usd",
+    "origin_week": "2026-11-08",
+    "target_week": "2026-12-06",
+    "target_end_ms": "1796601600000",
+    "level_bp": 8000,
+    "point": 1738190775756,
+    "lo": 816292402284,
+    "hi": 3187421227113,
+    "snapshot_hash": "bfaeda1cc631cc287cbb87be21af17746ab1a4bca3db83c52634814b8acaccdc",
+    "method": "conformal-h4"
+   },
+   "resolution": null,
+   "disputes": []
+  }
+ ],
+ "scoreboard": {
+  "predictions": 21,
+  "resolved": 0,
+  "hits": 0,
+  "hits_strict": 0,
+  "disputed": 0,
+  "hit_rate_bp": 0,
+  "mean_level_bp": 0
+ },
+ "predictions_registered_utc": "2026-11-14T08:01:21Z"
+}

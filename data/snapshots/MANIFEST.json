@@ -1,0 +1,86 @@
+{
+  "nb_charts": {
+    "url": "https://api.nearblocks.io/v1/charts",
+    "fetched_at_utc": "2026-11-13T23:53:07Z",
+    "fetched_at_cst": "2026-11-13 17:53 CST",
+    "sha256": "6a74ed0c12080bcfba0e8b333e3efe2ace87933e0b8efd811983b0673971cad4",
+    "bytes": 1544022
+  },
+  "nb_stats": {
+    "url": "https://api.nearblocks.io/v1/stats",
+    "fetched_at_utc": "2026-11-13T23:53:08Z",
+    "fetched_at_cst": "2026-11-13 17:53 CST",
+    "sha256": "2c5ff12bfe4c61361d4aa7e1a81c8ec09df2054511c16c28f0dfff4eb28b3252",
+    "bytes": 478
+  },
+  "rpc_status": {
+    "url": "https://rpc.mainnet.near.org",
+    "fetched_at_utc": "2026-11-13T23:53:11Z",
+    "fetched_at_cst": "2026-11-13 17:53 CST",
+    "sha256": "89243da4a18aa05c3c38f3e1b5c0f66694eaef591270a0f7f308eabac6c86cfa",
+    "bytes": 4872
+  },
+  "rpc_validators": {
+    "url": "https://rpc.mainnet.near.org",
+    "fetched_at_utc": "2026-11-13T23:53:14Z",
+    "fetched_at_cst": "2026-11-13 17:53 CST",
+    "sha256": "f203f18a7db1da4f90b6194e75f80b3d74bae13c328400af80075c5bc6758c99",
+    "bytes": 378169
+  },
+  "fastnear_rpc": {
+    "url": "https://free.rpc.fastnear.com",
+    "fetched_at_utc": "2026-11-13T23:53:14Z",
+    "fetched_at_cst": "2026-11-13 17:53 CST",
+    "sha256": "d6d157c836fe88e718c0ee4010d2d3ef738a9b861670b6f2f0477f8d1d18ce70",
+    "bytes": 4872
+  },
+  "dl_tvl": {
+    "url": "https://api.llama.fi/v2/historicalChainTvl/Near",
+    "fetched_at_utc": "2026-11-13T23:53:14Z",
+    "fetched_at_cst": "2026-11-13 17:53 CST",
+    "sha256": "8b741c889d18d4610035b44bfc511a38211407c901854f55afd84ca34dc51e54",
+    "bytes": 68068
+  },
+  "dl_chains": {
+    "url": "https://api.llama.fi/v2/chains",
+    "fetched_at_utc": "2026-11-13T23:53:14Z",
+    "fetched_at_cst": "2026-11-13 17:53 CST",
+    "sha256": "1bdec9aada40aada0e8872e603c190aed7236a109e44779b073b9a112e959272",
+    "bytes": 58107
+  },
+  "dl_stable": {
+    "url": "https://stablecoins.llama.fi/stablecoincharts/Near",
+    "fetched_at_utc": "2026-11-13T23:53:15Z",
+    "fetched_at_cst": "2026-11-13 17:53 CST",
+    "sha256": "717cf36b80f005b66093b4f5ef02ef6a0ee0ab676f64562e1c2ee400490d7d48",
+    "bytes": 368320
+  },
+  "dl_fees": {
+    "url": "https://api.llama.fi/overview/fees/Near?dataType=dailyFees",
+    "fetched_at_utc": "2026-11-13T23:53:15Z",
+    "fetched_at_cst": "2026-11-13 17:53 CST",
+    "sha256": "617476e4ef0c8873dcbeeaa08ad2e0c9a0b3ee773a02e7e26f309f0f379e6615",
+    "bytes": 124885
+  },
+  "dl_dex": {
+    "url": "https://api.llama.fi/overview/dexs/Near",
+    "fetched_at_utc": "2026-11-13T23:53:15Z",
+    "fetched_at_cst": "2026-11-13 17:53 CST",
+    "sha256": "554b955dd0c560085ba0c9759b1d7a34cbdf209a7d57b93d33c7137578fbb813",
+    "bytes": 207625
+  },
+  "dl_intents_vol": {
+    "url": "https://api.llama.fi/summary/dexs/near-intents",
+    "fetched_at_utc": "2026-11-14T08:05:53Z",
+    "fetched_at_cst": "2026-11-14 02:05 CST",
+    "sha256": "ae314ea97a8be644f1f6d30af7f028cc4c15935e28e9be354fa4bbaa6f33d0e4",
+    "bytes": 50729
+  },
+  "dl_intents_fees": {
+    "url": "https://api.llama.fi/summary/fees/near-intents?dataType=dailyFees",
+    "fetched_at_utc": "2026-11-14T08:05:53Z",
+    "fetched_at_cst": "2026-11-14 02:05 CST",
+    "sha256": "9d63a842045327af4dbf95d02a0fb1100bbc9eefd9a85699b838f24c6c095381",
+    "bytes": 39204
+  }
+}

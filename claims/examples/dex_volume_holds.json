@@ -1,0 +1,1 @@
+{"id": "X1", "statement": "DEX volume on NEAR is not shrinking: median weekly volume of the last 13 weeks is at least that of the same 13 weeks a year earlier.", "series": "dex_vol_usd", "kind": "ratio_prior", "stat": "median", "window": 13, "lag": 52, "comparator": ">=", "threshold": 1.0}

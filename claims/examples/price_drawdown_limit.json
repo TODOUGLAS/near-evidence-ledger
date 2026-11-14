@@ -1,0 +1,1 @@
+{"id": "X3", "statement": "The 26-week price change is not worse than -20%.", "series": "price", "kind": "growth", "window": 26, "comparator": ">=", "threshold": -0.2}

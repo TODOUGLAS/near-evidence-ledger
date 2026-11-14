@@ -1,0 +1,460 @@
+[
+  {
+    "id": "C1",
+    "verdict": "REFUTED",
+    "flip_change": -0.8150000000000001,
+    "variants": [
+      {
+        "label": "median of last 13 weeks vs same weeks a year earlier",
+        "value": 0.1536789906428432,
+        "ci": [
+          0.14374664584450247,
+          0.18752145372271978
+        ],
+        "thr": 1.0,
+        "verdict": "REFUTED",
+        "note": ""
+      },
+      {
+        "label": "median of last 8 weeks vs same weeks a year earlier",
+        "value": 0.16716723140812745,
+        "ci": [
+          0.13433198384170203,
+          0.2018408385519601
+        ],
+        "thr": 1.0,
+        "verdict": "REFUTED",
+        "note": ""
+      },
+      {
+        "label": "median of last 26 weeks vs same weeks a year earlier",
+        "value": 0.15258251443588894,
+        "ci": [
+          0.1453469393460074,
+          0.16834404262944672
+        ],
+        "thr": 1.0,
+        "verdict": "REFUTED",
+        "note": ""
+      },
+      {
+        "label": "mean of last 13 weeks vs same weeks a year earlier",
+        "value": 0.15799716771045427,
+        "ci": [
+          0.1453581671451236,
+          0.17776308561720594
+        ],
+        "thr": 1.0,
+        "verdict": "REFUTED",
+        "note": ""
+      }
+    ],
+    "stable_share": 1.0,
+    "label": "ROBUST",
+    "base_same": true
+  },
+  {
+    "id": "C2",
+    "verdict": "REFUTED",
+    "flip_change": -0.21,
+    "variants": [
+      {
+        "label": "median of weekly-median daily active accounts, last 13 weeks",
+        "value": 71159.0,
+        "ci": [
+          55503.0,
+          79464.0
+        ],
+        "thr": 100000.0,
+        "verdict": "REFUTED",
+        "note": ""
+      },
+      {
+        "label": "median of weekly-median daily active accounts, last 8 weeks",
+        "value": 56401.5,
+        "ci": [
+          51423.0,
+          62990.0
+        ],
+        "thr": 100000.0,
+        "verdict": "REFUTED",
+        "note": ""
+      },
+      {
+        "label": "median of weekly-median daily active accounts, last 26 weeks",
+        "value": 83254.0,
+        "ci": [
+          74143.0,
+          107786.0
+        ],
+        "thr": 100000.0,
+        "verdict": "INCONCLUSIVE",
+        "note": ""
+      },
+      {
+        "label": "mean of weekly-median daily active accounts, last 13 weeks",
+        "value": 67535.38461538461,
+        "ci": [
+          59671.88846153847,
+          73657.16923076923
+        ],
+        "thr": 100000.0,
+        "verdict": "REFUTED",
+        "note": ""
+      }
+    ],
+    "stable_share": 0.75,
+    "label": "MOSTLY STABLE",
+    "base_same": true
+  },
+  {
+    "id": "C3",
+    "verdict": "SUPPORTED",
+    "flip_change": 0.5750000000000001,
+    "variants": [
+      {
+        "label": "DefiLlama fees (network + protocols), last 13 weeks annualised",
+        "value": 0.01858894681112222,
+        "ci": [
+          0.01576448489802911,
+          0.02297631437384176
+        ],
+        "thr": 0.01,
+        "verdict": "SUPPORTED",
+        "note": ""
+      },
+      {
+        "label": "DefiLlama fees (network + protocols), last 8 weeks annualised",
+        "value": 0.02200308048812978,
+        "ci": [
+          0.018377764751960544,
+          0.025945024580251292
+        ],
+        "thr": 0.01,
+        "verdict": "SUPPORTED",
+        "note": ""
+      },
+      {
+        "label": "DefiLlama fees (network + protocols), last 26 weeks annualised",
+        "value": 0.013764495168775804,
+        "ci": [
+          0.010504197653728594,
+          0.017366246178180528
+        ],
+        "thr": 0.01,
+        "verdict": "SUPPORTED",
+        "note": ""
+      },
+      {
+        "label": "DATA SOURCE: gas-only fees (NearBlocks), last 13 weeks annualised",
+        "value": 0.00032510681267066766,
+        "ci": [
+          0.00020353647418151958,
+          0.0004984588136867662
+        ],
+        "thr": 0.01,
+        "verdict": "REFUTED",
+        "note": "drops protocol fees that DefiLlama attributes to NEAR"
+      }
+    ],
+    "stable_share": 0.75,
+    "label": "MOSTLY STABLE",
+    "base_same": true
+  },
+  {
+    "id": "C4",
+    "verdict": "SUPPORTED",
+    "flip_change": 0.42,
+    "variants": [
+      {
+        "label": "latest TVL vs trailing 52-week median",
+        "value": 1.5449441153558057,
+        "ci": [
+          1.4171115525825566,
+          1.7491801125504318
+        ],
+        "thr": 1.0,
+        "verdict": "SUPPORTED",
+        "note": ""
+      },
+      {
+        "label": "latest TVL vs trailing 26-week median",
+        "value": 1.4969482895329254,
+        "ci": [
+          1.0472307343152871,
+          1.6638657080916623
+        ],
+        "thr": 1.0,
+        "verdict": "SUPPORTED",
+        "note": ""
+      },
+      {
+        "label": "latest TVL vs trailing 104-week median",
+        "value": 1.2300481233490739,
+        "ci": [
+          1.1153911859959962,
+          1.410619294958066
+        ],
+        "thr": 1.0,
+        "verdict": "SUPPORTED",
+        "note": ""
+      }
+    ],
+    "stable_share": 1.0,
+    "label": "ROBUST",
+    "base_same": true
+  },
+  {
+    "id": "C5",
+    "verdict": "REFUTED",
+    "flip_change": -0.665,
+    "variants": [
+      {
+        "label": "stablecoin growth over 13 weeks (threshold scaled to 5.0%)",
+        "value": 0.0161203999438162,
+        "ci": null,
+        "thr": 0.050000000000000044,
+        "verdict": "REFUTED",
+        "note": ""
+      },
+      {
+        "label": "stablecoin growth over 8 weeks (threshold scaled to 3.0%)",
+        "value": 0.6256328912330553,
+        "ci": null,
+        "thr": 0.030480003407037604,
+        "verdict": "SUPPORTED",
+        "note": ""
+      },
+      {
+        "label": "stablecoin growth over 26 weeks (threshold scaled to 10.3%)",
+        "value": 0.07502801246044077,
+        "ci": null,
+        "thr": 0.10250000000000004,
+        "verdict": "REFUTED",
+        "note": ""
+      }
+    ],
+    "stable_share": 0.6666666666666666,
+    "label": "FRAGILE",
+    "base_same": true
+  },
+  {
+    "id": "C6",
+    "verdict": "REFUTED",
+    "flip_change": -0.375,
+    "variants": [
+      {
+        "label": "price vs active-account log-change correlation, last 52 weeks",
+        "value": -0.10305329776290334,
+        "ci": [
+          -0.2791383647762696,
+          0.12527537199580416
+        ],
+        "thr": 0.2,
+        "verdict": "REFUTED",
+        "note": ""
+      },
+      {
+        "label": "price vs active-account log-change correlation, last 26 weeks",
+        "value": -0.18291344947577032,
+        "ci": [
+          -0.47794310043098354,
+          0.27003648288027704
+        ],
+        "thr": 0.2,
+        "verdict": "INCONCLUSIVE",
+        "note": ""
+      },
+      {
+        "label": "price vs active-account log-change correlation, last 104 weeks",
+        "value": -0.06298612657763956,
+        "ci": [
+          -0.17797886005289718,
+          0.07364478295633901
+        ],
+        "thr": 0.2,
+        "verdict": "REFUTED",
+        "note": ""
+      }
+    ],
+    "stable_share": 0.6666666666666666,
+    "label": "FRAGILE",
+    "base_same": true
+  },
+  {
+    "id": "C7",
+    "verdict": "INCONCLUSIVE",
+    "flip_change": -0.05,
+    "variants": [
+      {
+        "label": "validators needed to control 1/3 of stake (BFT safety)",
+        "value": 10.0,
+        "ci": null,
+        "thr": 10.0,
+        "verdict": "INCONCLUSIVE",
+        "note": ""
+      },
+      {
+        "label": "validators needed to control 30% of stake",
+        "value": 8.0,
+        "ci": null,
+        "thr": 10.0,
+        "verdict": "REFUTED",
+        "note": ""
+      },
+      {
+        "label": "validators needed to control 36% of stake",
+        "value": 11.0,
+        "ci": null,
+        "thr": 10.0,
+        "verdict": "SUPPORTED",
+        "note": ""
+      }
+    ],
+    "stable_share": 0.3333333333333333,
+    "label": "FRAGILE",
+    "base_same": true
+  },
+  {
+    "id": "C8",
+    "verdict": "SUPPORTED",
+    "flip_change": -0.48,
+    "variants": [
+      {
+        "label": "supply growth over 52 weeks (threshold scaled to 5.0%)",
+        "value": 0.024727686097871793,
+        "ci": null,
+        "thr": 0.05,
+        "verdict": "SUPPORTED",
+        "note": ""
+      },
+      {
+        "label": "supply growth over 26 weeks (threshold scaled to 2.5%)",
+        "value": 0.012366495330375038,
+        "ci": null,
+        "thr": 0.025,
+        "verdict": "SUPPORTED",
+        "note": ""
+      },
+      {
+        "label": "supply growth over 104 weeks (threshold scaled to 10.0%)",
+        "value": 0.07510291253798451,
+        "ci": null,
+        "thr": 0.1,
+        "verdict": "SUPPORTED",
+        "note": ""
+      }
+    ],
+    "stable_share": 1.0,
+    "label": "ROBUST",
+    "base_same": true
+  },
+  {
+    "id": "C9",
+    "verdict": "SUPPORTED",
+    "flip_change": 0.68,
+    "variants": [
+      {
+        "label": "median weekly Intents volume, last 13 weeks vs the 13 before",
+        "value": 1.934245879561889,
+        "ci": [
+          1.6773058748164422,
+          2.181375029509962
+        ],
+        "thr": 1.0,
+        "verdict": "SUPPORTED",
+        "note": ""
+      },
+      {
+        "label": "median weekly Intents volume, last 8 weeks vs the 8 before",
+        "value": 1.4786011172422566,
+        "ci": [
+          1.064872642961034,
+          2.301853108141758
+        ],
+        "thr": 1.0,
+        "verdict": "SUPPORTED",
+        "note": ""
+      },
+      {
+        "label": "median weekly Intents volume, last 26 weeks vs the 26 before",
+        "value": 1.376175059894586,
+        "ci": [
+          0.9413445354789436,
+          1.8252735220149092
+        ],
+        "thr": 1.0,
+        "verdict": "INCONCLUSIVE",
+        "note": ""
+      },
+      {
+        "label": "mean weekly Intents volume, last 13 weeks vs the 13 before",
+        "value": 1.8279220712262032,
+        "ci": [
+          1.5828037801855603,
+          2.093433488127944
+        ],
+        "thr": 1.0,
+        "verdict": "SUPPORTED",
+        "note": ""
+      }
+    ],
+    "stable_share": 0.75,
+    "label": "MOSTLY STABLE",
+    "base_same": true
+  },
+  {
+    "id": "C10",
+    "verdict": "SUPPORTED",
+    "flip_change": 0.42,
+    "variants": [
+      {
+        "label": "fees / volume, last 13 weeks",
+        "value": 0.0015384509532090597,
+        "ci": [
+          0.001414846321844348,
+          0.0016603605623337788
+        ],
+        "thr": 0.001,
+        "verdict": "SUPPORTED",
+        "note": ""
+      },
+      {
+        "label": "fees / volume, last 8 weeks",
+        "value": 0.001652952789048423,
+        "ci": [
+          0.0015612407163758792,
+          0.0017267387278969723
+        ],
+        "thr": 0.001,
+        "verdict": "SUPPORTED",
+        "note": ""
+      },
+      {
+        "label": "fees / volume, last 26 weeks",
+        "value": 0.001481200662861244,
+        "ci": [
+          0.0013640545852061081,
+          0.0015763731132510427
+        ],
+        "thr": 0.001,
+        "verdict": "SUPPORTED",
+        "note": ""
+      },
+      {
+        "label": "fees / volume, last 4 weeks (the fee switch is recent)",
+        "value": 0.0015700227137677894,
+        "ci": [
+          0.0015371446590986568,
+          0.001574536738857361
+        ],
+        "thr": 0.001,
+        "verdict": "SUPPORTED",
+        "note": ""
+      }
+    ],
+    "stable_share": 1.0,
+    "label": "ROBUST",
+    "base_same": true
+  }
+]

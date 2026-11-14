@@ -1,0 +1,66 @@
+1
+00:00:00,550 --> 00:00:03,021
+Most investment theses are about conviction.
+
+2
+00:00:03,041 --> 00:00:05,106
+This one is built to be proven wrong.
+
+3
+00:00:07,306 --> 00:00:13,051
+One command tests ten claims on public NEAR
+data, each with a threshold fixed in advance.
+
+4
+00:00:13,071 --> 00:00:17,098
+Five are supported, four are
+refuted, one is inconclusive.
+
+5
+00:00:17,118 --> 00:00:20,355
+Usage is far below last
+year. We show that plainly.
+
+6
+00:00:22,455 --> 00:00:27,353
+Verdicts and hashes of the exact data
+and code live in a NEAR testnet contract.
+
+7
+00:00:27,373 --> 00:00:31,260
+This command re-runs everything
+offline and compares it with the chain.
+
+8
+00:00:31,280 --> 00:00:34,854
+Everything matches. Change one
+byte, and it says mismatch.
+
+9
+00:00:35,854 --> 00:00:38,673
+Here is the publishing
+transaction on NEAR testnet.
+
+10
+00:00:41,073 --> 00:00:43,800
+Each verdict also shows how fragile it is.
+
+11
+00:00:43,820 --> 00:00:48,021
+Anyone can challenge it with other data,
+and the contract recomputes the verdict.
+
+12
+00:00:48,041 --> 00:00:50,965
+Our own test challenge flips revenue to refuted.
+
+13
+00:00:51,565 --> 00:00:55,603
+Forecasts are pre-registered
+on-chain, so they cannot be backdated.
+
+14
+00:00:55,623 --> 00:00:59,336
+Evidence over conviction. Built
+at NEAR Hackathon, testnet only.
+

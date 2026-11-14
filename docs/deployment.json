@@ -1,0 +1,9 @@
+{
+  "network": "testnet",
+  "contract": "evledger-1114.testnet",
+  "publisher": "evledger-pub-1114.testnet",
+  "challenger": "evledger-chal-1114.testnet",
+  "explorer": "https://testnet.nearblocks.io/address/evledger-1114.testnet",
+  "contract_wasm_sha256": "454756657be70f478b5707cdaa2f43f8249860c0bd2e0be5dfac84abcc9ed71c",
+  "note": "testnet only; no mainnet transaction is made by this project"
+}

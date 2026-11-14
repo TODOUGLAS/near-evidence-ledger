@@ -1,0 +1,272 @@
+{
+  "as_of_week": "2026-11-08",
+  "chain_head_check": {
+    "near_rpc": 224435234,
+    "fastnear": 224435241,
+    "diff": 7
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "statement": "Usage is not shrinking: median weekly transactions of the last 13 weeks are at least equal to the same 13 weeks one year earlier.",
+      "metric": "txns_yoy_ratio",
+      "threshold": 1.0,
+      "comparator": ">=",
+      "value": 0.1536789906428432,
+      "ci90": [
+        0.14374664584450247,
+        0.18752145372271978
+      ],
+      "verdict": "REFUTED",
+      "sources": [
+        "nb_charts"
+      ],
+      "kb": [
+        "b132-00274",
+        "b104-00723"
+      ]
+    },
+    {
+      "id": "C2",
+      "statement": "The user base is large: median of weekly-median daily active accounts over the last 13 weeks is at least 100,000.",
+      "metric": "active_accounts_median",
+      "threshold": 100000,
+      "comparator": ">=",
+      "value": 71159.0,
+      "ci90": [
+        55503.0,
+        79464.0
+      ],
+      "verdict": "REFUTED",
+      "sources": [
+        "nb_charts"
+      ],
+      "kb": [
+        "b104-00723"
+      ]
+    },
+    {
+      "id": "C3",
+      "statement": "Real revenue exists: fees paid on the NEAR chain (network + protocols, DefiLlama), annualised from the last 13 weeks, are at least 1% of current market capitalisation.",
+      "metric": "fee_yield_ecosystem",
+      "threshold": 0.01,
+      "comparator": ">=",
+      "value": 0.01858894681112222,
+      "ci90": [
+        0.01573954650776061,
+        0.022890527402807073
+      ],
+      "verdict": "SUPPORTED",
+      "sources": [
+        "dl_fees",
+        "nb_stats"
+      ],
+      "kb": [
+        "b168-00630"
+      ]
+    },
+    {
+      "id": "C4",
+      "statement": "DeFi liquidity holds: latest weekly TVL is at least its trailing 52-week median.",
+      "metric": "tvl_vs_median",
+      "threshold": 1.0,
+      "comparator": ">=",
+      "value": 1.5449441153558057,
+      "ci90": [
+        1.4171115525825566,
+        1.7491801125504318
+      ],
+      "verdict": "SUPPORTED",
+      "sources": [
+        "dl_tvl"
+      ],
+      "kb": [
+        "b104-00723"
+      ]
+    },
+    {
+      "id": "C5",
+      "statement": "Stablecoin float is growing: stablecoin supply on NEAR is at least 5% higher than 13 weeks earlier.",
+      "metric": "stable_growth_13w",
+      "threshold": 0.05,
+      "comparator": ">=",
+      "value": 0.0161203999438162,
+      "ci90": null,
+      "verdict": "REFUTED",
+      "sources": [
+        "dl_stable"
+      ],
+      "kb": [
+        "b114-01085"
+      ]
+    },
+    {
+      "id": "C6",
+      "statement": "Price tracks usage: over the last 52 weeks the correlation between weekly log change of price and weekly log change of active accounts is at least 0.2.",
+      "metric": "price_usage_corr",
+      "threshold": 0.2,
+      "comparator": ">=",
+      "value": -0.10305329776290334,
+      "ci90": [
+        -0.2791383647762696,
+        0.12527537199580416
+      ],
+      "verdict": "REFUTED",
+      "sources": [
+        "nb_charts"
+      ],
+      "kb": [
+        "b193-00277"
+      ]
+    },
+    {
+      "id": "C7",
+      "statement": "Validation is decentralised: at least 10 validators are needed to control one third of the stake (the BFT safety threshold).",
+      "metric": "nakamoto",
+      "threshold": 10,
+      "comparator": ">=",
+      "value": 10.0,
+      "ci90": null,
+      "verdict": "INCONCLUSIVE",
+      "sources": [
+        "rpc_validators"
+      ],
+      "kb": []
+    },
+    {
+      "id": "C8",
+      "statement": "Dilution is modest: total supply grew by at most 5% over the last 52 weeks.",
+      "metric": "supply_growth_52w",
+      "threshold": 0.05,
+      "comparator": "<=",
+      "value": 0.024727686097871793,
+      "ci90": null,
+      "verdict": "SUPPORTED",
+      "sources": [
+        "nb_charts"
+      ],
+      "kb": []
+    },
+    {
+      "id": "C9",
+      "statement": "Intent flow keeps growing: median weekly NEAR Intents volume of the last 13 weeks is at least the median of the 13 weeks before them.",
+      "metric": "intents_qoq_ratio",
+      "threshold": 1.0,
+      "comparator": ">=",
+      "value": 1.934245879561889,
+      "ci90": [
+        1.6773058748164422,
+        2.181375029509962
+      ],
+      "verdict": "SUPPORTED",
+      "sources": [
+        "dl_intents_vol"
+      ],
+      "kb": []
+    },
+    {
+      "id": "C10",
+      "statement": "Intent flow monetises: fees DefiLlama attributes to NEAR Intents are at least 0.10% of its volume over the last 13 weeks.",
+      "metric": "intents_take_rate",
+      "threshold": 0.001,
+      "comparator": ">=",
+      "value": 0.0015384509532090597,
+      "ci90": [
+        0.001414846321844348,
+        0.0016603605623337788
+      ],
+      "verdict": "SUPPORTED",
+      "sources": [
+        "dl_intents_vol",
+        "dl_intents_fees"
+      ],
+      "kb": []
+    }
+  ],
+  "sources": {
+    "nb_charts": {
+      "url": "https://api.nearblocks.io/v1/charts",
+      "status": "snapshot",
+      "fetched_at_utc": "2026-11-13T23:53:07Z",
+      "fetched_at_cst": "2026-11-13 17:53 CST",
+      "sha256": "6a74ed0c12080bcfba0e8b333e3efe2ace87933e0b8efd811983b0673971cad4"
+    },
+    "nb_stats": {
+      "url": "https://api.nearblocks.io/v1/stats",
+      "status": "snapshot",
+      "fetched_at_utc": "2026-11-13T23:53:08Z",
+      "fetched_at_cst": "2026-11-13 17:53 CST",
+      "sha256": "2c5ff12bfe4c61361d4aa7e1a81c8ec09df2054511c16c28f0dfff4eb28b3252"
+    },
+    "rpc_status": {
+      "url": "https://rpc.mainnet.near.org",
+      "status": "snapshot",
+      "fetched_at_utc": "2026-11-13T23:53:11Z",
+      "fetched_at_cst": "2026-11-13 17:53 CST",
+      "sha256": "89243da4a18aa05c3c38f3e1b5c0f66694eaef591270a0f7f308eabac6c86cfa"
+    },
+    "rpc_validators": {
+      "url": "https://rpc.mainnet.near.org",
+      "status": "snapshot",
+      "fetched_at_utc": "2026-11-13T23:53:14Z",
+      "fetched_at_cst": "2026-11-13 17:53 CST",
+      "sha256": "f203f18a7db1da4f90b6194e75f80b3d74bae13c328400af80075c5bc6758c99"
+    },
+    "fastnear_rpc": {
+      "url": "https://free.rpc.fastnear.com",
+      "status": "snapshot",
+      "fetched_at_utc": "2026-11-13T23:53:14Z",
+      "fetched_at_cst": "2026-11-13 17:53 CST",
+      "sha256": "d6d157c836fe88e718c0ee4010d2d3ef738a9b861670b6f2f0477f8d1d18ce70"
+    },
+    "dl_tvl": {
+      "url": "https://api.llama.fi/v2/historicalChainTvl/Near",
+      "status": "snapshot",
+      "fetched_at_utc": "2026-11-13T23:53:14Z",
+      "fetched_at_cst": "2026-11-13 17:53 CST",
+      "sha256": "8b741c889d18d4610035b44bfc511a38211407c901854f55afd84ca34dc51e54"
+    },
+    "dl_chains": {
+      "url": "https://api.llama.fi/v2/chains",
+      "status": "snapshot",
+      "fetched_at_utc": "2026-11-13T23:53:14Z",
+      "fetched_at_cst": "2026-11-13 17:53 CST",
+      "sha256": "1bdec9aada40aada0e8872e603c190aed7236a109e44779b073b9a112e959272"
+    },
+    "dl_stable": {
+      "url": "https://stablecoins.llama.fi/stablecoincharts/Near",
+      "status": "snapshot",
+      "fetched_at_utc": "2026-11-13T23:53:15Z",
+      "fetched_at_cst": "2026-11-13 17:53 CST",
+      "sha256": "717cf36b80f005b66093b4f5ef02ef6a0ee0ab676f64562e1c2ee400490d7d48"
+    },
+    "dl_fees": {
+      "url": "https://api.llama.fi/overview/fees/Near?dataType=dailyFees",
+      "status": "snapshot",
+      "fetched_at_utc": "2026-11-13T23:53:15Z",
+      "fetched_at_cst": "2026-11-13 17:53 CST",
+      "sha256": "617476e4ef0c8873dcbeeaa08ad2e0c9a0b3ee773a02e7e26f309f0f379e6615"
+    },
+    "dl_intents_vol": {
+      "url": "https://api.llama.fi/summary/dexs/near-intents",
+      "status": "snapshot",
+      "fetched_at_utc": "2026-11-14T08:05:53Z",
+      "fetched_at_cst": "2026-11-14 02:05 CST",
+      "sha256": "ae314ea97a8be644f1f6d30af7f028cc4c15935e28e9be354fa4bbaa6f33d0e4"
+    },
+    "dl_intents_fees": {
+      "url": "https://api.llama.fi/summary/fees/near-intents?dataType=dailyFees",
+      "status": "snapshot",
+      "fetched_at_utc": "2026-11-14T08:05:53Z",
+      "fetched_at_cst": "2026-11-14 02:05 CST",
+      "sha256": "9d63a842045327af4dbf95d02a0fb1100bbc9eefd9a85699b838f24c6c095381"
+    },
+    "dl_dex": {
+      "url": "https://api.llama.fi/overview/dexs/Near",
+      "status": "snapshot",
+      "fetched_at_utc": "2026-11-13T23:53:15Z",
+      "fetched_at_cst": "2026-11-13 17:53 CST",
+      "sha256": "554b955dd0c560085ba0c9759b1d7a34cbdf209a7d57b93d33c7137578fbb813"
+    }
+  }
+}

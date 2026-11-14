@@ -1,0 +1,10 @@
+utc	action	id	tx	url	note
+2026-11-14T08:00:28Z	create_account	evledger-1114.testnet	FkGGpn3m9x6ZgHW2JwkCavBiKqKU2Vt6JeXNEGBzagqv	https://testnet.nearblocks.io/txns/FkGGpn3m9x6ZgHW2JwkCavBiKqKU2Vt6JeXNEGBzagqv	contract account, funded 4.5 NEAR (testnet)
+2026-11-14T08:00:44Z	deploy_contract	evledger-1114.testnet	FzKFsiE4Hs2WFgNBFEuQL32TEyNaYuZbVinzdvekdzBe	https://testnet.nearblocks.io/txns/FzKFsiE4Hs2WFgNBFEuQL32TEyNaYuZbVinzdvekdzBe	evidence-ledger 0.1.0 + init new()
+2026-11-14T08:00:49Z	create_account	evledger-pub-1114.testnet	ACHj9obgwX9TJRtzToj6fRMCDKmqQPnL3WYi6BuBd43	https://testnet.nearblocks.io/txns/ACHj9obgwX9TJRtzToj6fRMCDKmqQPnL3WYi6BuBd43	publisher account, 1.2 NEAR
+2026-11-14T08:00:56Z	create_account	evledger-chal-1114.testnet	2oLXNj9Xgd3eyLAUk2pLxBtJE2xrx5jgeir4qfyf6Bpk	https://testnet.nearblocks.io/txns/2oLXNj9Xgd3eyLAUk2pLxBtJE2xrx5jgeir4qfyf6Bpk	challenger account, 0.6 NEAR
+2026-11-14T08:01:21Z	register_predictions	0-11	EtjqKLz3CyGQU97joKKkkgVfSBcaP1LDSsWrHcGWLCmK	https://testnet.nearblocks.io/txns/EtjqKLz3CyGQU97joKKkkgVfSBcaP1LDSsWrHcGWLCmK	12 forecasts
+2026-11-14T08:01:27Z	register_predictions	12-20	7n3HNTq7jPTBz7obirBnSdj1qv2hGVe2GQcy5B5aQvnx	https://testnet.nearblocks.io/txns/7n3HNTq7jPTBz7obirBnSdj1qv2hGVe2GQcy5B5aQvnx	9 forecasts
+2026-11-14T08:08:48Z	redeploy_code	evledger-1114.testnet	87hbjMMZ6hfh6Far1Kd1vwAgpw4oB6Dp2sgTZCf8LnUC	https://testnet.nearblocks.io/txns/87hbjMMZ6hfh6Far1Kd1vwAgpw4oB6Dp2sgTZCf8LnUC	evidence-ledger 0.1.1 (scoreboard hits_strict); state kept
+2026-11-14T08:11:17Z	publish_run	0	2oGaJY8LrJjwu7VEB96JFyyJSAF53W6CUfFE5LNoyARj	https://testnet.nearblocks.io/txns/2oGaJY8LrJjwu7VEB96JFyyJSAF53W6CUfFE5LNoyARj	results_hash=5570a5c12d94b1c5
+2026-11-14T08:12:10Z	challenge	run0/C3	FZFgYUqZJhFW8PReyTzqkVfQkCLmpy3zrmiyVFWNB52a	https://testnet.nearblocks.io/txns/FZFgYUqZJhFW8PReyTzqkVfQkCLmpy3zrmiyVFWNB52a	Own robustness variant, not a third party: C3 recomputed wit
