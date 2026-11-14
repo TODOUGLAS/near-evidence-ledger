@@ -9,24 +9,25 @@
 [  13.1s] Five are supported, four are refuted, one is inconclusive.
 [  17.2s] Usage is far below last year. We show that plainly.
 
-## verify  (starts  20.8s, 14.6s)
+## verify  (starts  20.8s, 15.3s)
 [  22.5s] Verdicts and hashes of the exact data and code live in a NEAR testnet contract.
           (spoken as: Verdicts, and hashes of the exact data and code, live in a Near test net contract.)
 [  27.4s] This command re-runs everything offline and compares it with the chain.
           (spoken as: This command re-runs everything offline, and compares it with the chain.)
-[  31.3s] Everything matches. Change one byte, and it says mismatch.
+[  31.3s] Everything matches.
+[  32.7s] Change one byte, and it says mismatch.
 
-## chain  (starts  35.4s,  5.2s)
-[  35.9s] Here is the publishing transaction on NEAR testnet.
+## chain  (starts  36.1s,  5.2s)
+[  36.6s] Here is the publishing transaction on NEAR testnet.
           (spoken as: Here is the publishing transaction on Near test net.)
 
-## fragility  (starts  40.6s, 10.6s)
-[  41.1s] Each verdict also shows how fragile it is.
-[  43.9s] Anyone can challenge it with other data, and the contract recomputes the verdict.
-[  48.1s] Our own test challenge flips revenue to refuted.
+## fragility  (starts  41.4s, 10.6s)
+[  41.9s] Each verdict also shows how fragile it is.
+[  44.6s] Anyone can challenge it with other data, and the contract recomputes the verdict.
+[  48.8s] Our own test challenge flips revenue to refuted.
 
-## end  (starts  51.2s,  8.7s)
-[  51.6s] Forecasts are pre-registered on-chain, so they cannot be backdated.
-[  55.7s] Evidence over conviction. Built at NEAR Hackathon, testnet only.
+## end  (starts  51.9s,  8.7s)
+[  52.3s] Forecasts are pre-registered on-chain, so they cannot be backdated.
+[  56.4s] Evidence over conviction. Built at NEAR Hackathon, testnet only.
           (spoken as: Evidence over conviction. Built at the Near Hackathon, test net only.)
 

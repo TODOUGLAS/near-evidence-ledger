@@ -32,35 +32,38 @@ This command re-runs everything
 offline and compares it with the chain.
 
 8
-00:00:31,280 --> 00:00:34,854
-Everything matches. Change one
-byte, and it says mismatch.
+00:00:31,280 --> 00:00:32,590
+Everything matches.
 
 9
-00:00:35,854 --> 00:00:38,673
+00:00:32,610 --> 00:00:35,186
+Change one byte, and it says mismatch.
+
+10
+00:00:36,586 --> 00:00:39,405
 Here is the publishing
 transaction on NEAR testnet.
 
-10
-00:00:41,073 --> 00:00:43,800
+11
+00:00:41,805 --> 00:00:44,531
 Each verdict also shows how fragile it is.
 
-11
-00:00:43,820 --> 00:00:48,021
+12
+00:00:44,551 --> 00:00:48,752
 Anyone can challenge it with other data,
 and the contract recomputes the verdict.
 
-12
-00:00:48,041 --> 00:00:50,965
+13
+00:00:48,772 --> 00:00:51,696
 Our own test challenge flips revenue to refuted.
 
-13
-00:00:51,565 --> 00:00:55,603
+14
+00:00:52,296 --> 00:00:56,335
 Forecasts are pre-registered
 on-chain, so they cannot be backdated.
 
-14
-00:00:55,623 --> 00:00:59,336
+15
+00:00:56,355 --> 00:01:00,068
 Evidence over conviction. Built
 at NEAR Hackathon, testnet only.
 
